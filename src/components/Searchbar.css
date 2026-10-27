@@ -33,11 +33,11 @@
     input {
 		all: unset;
 		height: 100%;
-		color: white;
+		color: var(--text-color);
 
 		&::placeholder {
 			color: inherit;
-			opacity: 0.3;
+			opacity: 0.5;
 		}
 	}
 
@@ -54,7 +54,7 @@
 		label {
 			display: block;
 			opacity: 0;
-			color: white;
+			color: var(--text-color);
 			width: 0;
 			transition: width 200ms ease-in-out, opacity 100ms ease-in-out;
 		}
