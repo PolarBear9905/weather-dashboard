@@ -1,8 +1,8 @@
 .info-container,
 .forecast {
-	margin: 50px auto;
-	display: grid;
+	margin: 60px auto;
 	max-width: 1280px;
+	display: grid;
 	background-color: var(--container-bg);
 	border-radius: 15px;
 }
@@ -116,4 +116,36 @@
 .day-icon {
 	width: 100px;
 	height: 100px;
+}
+
+/* Tablet and Phone */
+@media (max-width: 768px) {
+
+	.info-container,
+	.forecast {
+		margin: 50px 25px;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+	}
+
+	.big-card h1 {
+		font-size: 2.75rem;
+		margin: 5px;
+		padding: 5px;
+	}
+
+	.big-card img {
+		height: 8rem;
+	}
+	
+	.small-card-col,
+	.small-card-row {
+		padding: 10px;
+	}
+
+	.day {
+		flex: 1 100%;
+	}
 }
